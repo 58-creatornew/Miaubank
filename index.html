@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#651b2b">
+  <meta name="description" content="Miaubank — sua vida financeira no seu ritmo.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/mascote-base.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Miaubank</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Miaubank início">
+        <span class="brand-mark">m</span><span>Miaubank</span>
+      </a>
+      <p class="nav-caption">MENU PRINCIPAL</p>
+      <nav id="sideNav" class="side-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-page="inicio"><span>⌂</span> Início</button>
+        <button class="nav-item" data-page="despesas"><span>＋</span> Despesas</button>
+        <button class="nav-item" data-page="cartao"><span>▣</span> Cartão</button>
+        <button class="nav-item" data-page="salario"><span>↗</span> Salário</button>
+        <button class="nav-item" data-page="investimentos"><span>▥</span> Investimentos</button>
+        <button class="nav-item" data-page="metas"><span>◎</span> Metas</button>
+        <button class="nav-item" data-page="relatorios"><span>▤</span> Relatórios</button>
+      </nav>
+      <div class="sidebar-note">
+        <div class="note-icon">✦</div>
+        <strong>Um passo de cada vez.</strong>
+        <p>Pequenas escolhas também constroem grandes conquistas.</p>
+      </div>
+      <div class="profile"><div class="avatar">F</div><div><strong>Meu espaço</strong><small>Organização pessoal</small></div><span class="dots">•••</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><span class="eyebrow">SEU DINHEIRO, NO SEU RITMO</span><h1 id="pageTitle">Bom dia! <span>♡</span></h1></div>
+        <div class="top-actions"><span class="offline-pill"><i></i> Modo local</span><button class="icon-button" id="privacyBtn" title="Ocultar valores" aria-label="Ocultar valores">◉</button><button class="primary-button" data-page="despesas">＋ Novo lançamento</button></div>
+      </header>
+
+      <section class="page active" id="page-inicio">
+        <div class="welcome-card">
+          <div class="welcome-copy"><span class="eyebrow light">BEM-VINDA AO MIAUBANK</span><h2>Seu dinheiro merece<br>um bom planejamento.</h2><p>Organize hoje. Conquiste amanhã.</p><button class="light-button" data-page="despesas">Adicionar lançamento <b>→</b></button></div>
+          <img src="assets/mascote-base.png" alt="Mascote oficial do Miaubank" class="hero-cat">
+          <div class="welcome-decoration">✦</div>
+        </div>
+
+        <div class="section-heading"><div><h2>Visão geral</h2><p>Um resumo da sua vida financeira.</p></div><span class="period-tag">Novembro 2026⌄</span></div>
+        <div class="summary-grid">
+          <article class="metric-card balance-card"><div class="metric-top"><span>Saldo disponível</span><span class="metric-icon">◉</span></div><strong class="money">R$ 2.340,00</strong><small><b class="positive">↑ 8,4%</b> em relação ao mês passado</small></article>
+          <article class="metric-card"><div class="metric-top"><span>Receitas</span><span class="metric-icon green">↙</span></div><strong class="money">R$ 4.500,00</strong><small>Entradas neste mês</small></article>
+          <article class="metric-card"><div class="metric-top"><span>Despesas</span><span class="metric-icon red">↗</span></div><strong class="money">R$ 2.160,00</strong><small>Gastos neste mês</small></article>
+          <article class="metric-card"><div class="metric-top"><span>Total investido</span><span class="metric-icon gold">▥</span></div><strong class="money">R$ 3.500,00</strong><small>Patrimônio acompanhado</small></article>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel budget-panel"><div class="panel-heading"><div><h3>Orçamento do mês</h3><p>Você está no caminho certo.</p></div><strong class="budget-percent">48%</strong></div><div class="progress"><span style="width:48%"></span></div><div class="progress-labels"><span>R$ 2.160 gastos</span><span>Limite: R$ 4.500</span></div><div class="budget-tip"><span>✦</span><div><b>Dica do gatinho</b><p>Que tal reservar um pouquinho antes de pensar nos próximos gastos?</p></div></div></article>
+          <article class="panel card-cycle"><div class="panel-heading"><div><h3>Cartão de crédito</h3><p>Ciclo atual: 26/11 a 25/12</p></div><span class="mini-icon">▣</span></div><strong class="money">R$ 1.240,00</strong><div class="progress card-progress"><span style="width:41%"></span></div><div class="progress-labels"><span>41% do limite utilizado</span><span>Fatura atual</span></div><button class="text-button" data-page="cartao">Ver detalhes →</button></article>
+        </div>
+
+        <div class="section-heading compact"><div><h2>Gastos por categoria</h2><p>Onde seu dinheiro está indo.</p></div><button class="text-button" data-page="relatorios">Ver relatório →</button></div>
+        <div class="category-grid">
+          <div class="category-card"><span class="cat-icon orange">♨</span><div><b>Alimentação</b><small>R$ 620,00</small></div><span class="cat-dot orange-dot"></span></div>
+          <div class="category-card"><span class="cat-icon blue">⌁</span><div><b>Transporte</b><small>R$ 280,00</small></div><span class="cat-dot blue-dot"></span></div>
+          <div class="category-card"><span class="cat-icon purple">▱</span><div><b>Educação</b><small>R$ 150,00</small></div><span class="cat-dot purple-dot"></span></div>
+          <div class="category-card"><span class="cat-icon red">▷</span><div><b>Streaming</b><small>R$ 89,90</small></div><span class="cat-dot red-dot"></span></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-despesas">
+        <div class="page-intro"><div><span class="eyebrow">MOVIMENTAÇÕES</span><h2>Despesas e receitas</h2><p>Registre e acompanhe cada movimentação.</p></div><button class="primary-button" id="newEntry">＋ Novo lançamento</button></div>
+        <div class="tabs"><button class="selected">Todas</button><button>Despesas</button><button>Receitas</button><button>Parceladas</button></div>
+        <div class="panel empty-or-demo"><div class="demo-row"><span class="cat-icon orange">♨</span><div><b>Mercado da semana</b><small>Alimentação · Hoje</small></div><strong class="expense money">− R$ 186,40</strong></div><div class="demo-row"><span class="cat-icon blue">⌁</span><div><b>Uber</b><small>Transporte · Ontem</small></div><strong class="expense money">− R$ 24,90</strong></div><div class="demo-row"><span class="cat-icon green">↙</span><div><b>Salário</b><small>Receita · 05/11/2026</small></div><strong class="income money">+ R$ 4.500,00</strong></div><p class="demo-warning">Valores ilustrativos para demonstração da interface.</p></div>
+      </section>
+
+      <section class="page" id="page-cartao"><div class="page-intro"><div><span class="eyebrow">CICLO DO CARTÃO</span><h2>Cartão de crédito</h2><p>Acompanhe compras, parcelas e faturas.</p></div><button class="primary-button">＋ Adicionar cartão</button></div><div class="two-col"><article class="panel burgundy-panel"><span>FATURA ATUAL</span><strong class="money">R$ 1.240,00</strong><p>Fechamento: dia 25 · Próximo ciclo inicia dia 26</p><div class="progress"><span style="width:41%"></span></div></article><article class="panel"><h3>Limite utilizado</h3><strong class="money">R$ 1.240,00 <small class="muted">de R$ 3.000,00</small></strong><p class="muted">41% do limite comprometido</p></article></div><article class="panel"><h3>Próximas faturas</h3><div class="simple-line"><span>26/12 a 25/01</span><b class="money">R$ 380,00</b></div><div class="simple-line"><span>26/01 a 25/02</span><b class="money">R$ 215,00</b></div></article></section>
+
+      <section class="page" id="page-salario"><div class="page-intro"><div><span class="eyebrow">RECEBIMENTOS</span><h2>Salário e receitas</h2><p>Planeje suas entradas e saiba quando o dinheiro chega.</p></div><button class="primary-button">＋ Adicionar receita</button></div><div class="two-col"><article class="panel"><span class="muted">SALÁRIO CADASTRADO</span><strong class="money big-money">R$ 4.500,00</strong><p class="muted">Recebimento no 5º dia útil</p></article><article class="panel"><span class="muted">PRÓXIMO PAGAMENTO</span><strong class="money big-money">05/12/2026</strong><p class="muted">Previsão ilustrativa</p></article></div></section>
+
+      <section class="page" id="page-investimentos"><div class="page-intro"><div><span class="eyebrow">PATRIMÔNIO</span><h2>Investimentos</h2><p>Acompanhe seus aportes e a evolução do que você constrói.</p></div><button class="primary-button">＋ Novo investimento</button></div><div class="two-col"><article class="panel burgundy-panel"><span>TOTAL ACOMPANHADO</span><strong class="money">R$ 3.500,00</strong><p>Valores demonstrativos</p></article><article class="panel"><h3>Distribuição</h3><div class="simple-line"><span>Poupança</span><b>R$ 1.200,00</b></div><div class="simple-line"><span>CDB</span><b>R$ 2.300,00</b></div></article></div></section>
+
+      <section class="page" id="page-metas"><div class="page-intro"><div><span class="eyebrow">PLANOS E CONQUISTAS</span><h2>Minhas metas</h2><p>Cada contribuição aproxima você do seu objetivo.</p></div><button class="primary-button">＋ Nova meta</button></div><div class="goal-list"><article class="panel goal"><div class="goal-symbol">✈</div><div class="goal-main"><b>Viagem</b><small>R$ 2.000,00 de R$ 5.000,00</small><div class="progress"><span style="width:40%"></span></div></div><strong>40%</strong></article><article class="panel goal"><div class="goal-symbol">▣</div><div class="goal-main"><b>Notebook</b><small>R$ 1.200,00 de R$ 3.000,00</small><div class="progress"><span style="width:40%"></span></div></div><strong>40%</strong></article><article class="panel goal"><div class="goal-symbol">♢</div><div class="goal-main"><b>Reserva de emergência</b><small>R$ 3.500,00 de R$ 8.000,00</small><div class="progress"><span style="width:44%"></span></div></div><strong>44%</strong></article></div></section>
+
+      <section class="page" id="page-relatorios"><div class="page-intro"><div><span class="eyebrow">ANÁLISE FINANCEIRA</span><h2>Relatórios</h2><p>Entenda seus hábitos e acompanhe sua evolução.</p></div></div><div class="tabs"><button>Diário</button><button>Semanal</button><button class="selected">Mensal</button><button>Anual</button></div><div class="two-col"><article class="panel"><h3>Resumo do período</h3><div class="simple-line"><span>Receitas</span><b class="income money">R$ 4.500,00</b></div><div class="simple-line"><span>Despesas</span><b class="expense money">R$ 2.160,00</b></div><div class="simple-line"><span>Saldo</span><b class="money">R$ 2.340,00</b></div></article><article class="panel"><h3>Distribuição de gastos</h3><div class="donut-wrap"><div class="donut"><span>R$ 2.160</span></div><div class="legend"><span>● Alimentação</span><span>● Transporte</span><span>● Estudos</span><span>● Outros</span></div></div></article></div></section>
+
+      <footer class="footer">Miaubank <span>•</span> Seu dinheiro, no seu ritmo.</footer>
+    </main>
+  </div>
+  <nav class="mobile-nav" aria-label="Navegação móvel">
+    <button class="active" data-page="inicio"><span>⌂</span>Início</button><button data-page="despesas"><span>＋</span>Despesas</button><button data-page="cartao"><span>▣</span>Cartão</button><button data-page="metas"><span>◎</span>Metas</button><button data-page="relatorios"><span>▤</span>Mais</button>
+  </nav>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
